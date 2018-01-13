@@ -1,0 +1,8 @@
+<br/>
+<ul *ngFor="let persona of listadoPersonas">
+  <li class="lista">
+    <a (click)="editarPersona(persona)" class="btn btn-sm btn-success">Editar</a>
+    <a (click)="eliminarPersona(persona)" class="btn btn-sm btn-danger">Eliminar</a>
+    DNI: {{persona.dni}},  Nombre: {{persona.nombre}},  Edad: {{persona.edad}}
+  </li>
+</ul>
